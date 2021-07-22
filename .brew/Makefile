@@ -1,4 +1,8 @@
 
+default:
+	# make install, to install softwares by Brewfile
+	# make backup, to dump Brewfile to ${HOME}/.brew/
+
 install:
 	# Install softwares by Brewfile
 	brew bundle install

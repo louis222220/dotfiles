@@ -1,0 +1,129 @@
+tap "heroku/brew"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
+tap "homebrew/services"
+tap "zegervdv/zathura"
+# Run your GitHub Actions locally 🚀
+brew "act"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
+# Download with resuming and segmented downloading
+brew "aria2"
+# Client for Amazon Elastic Beanstalk web service
+brew "aws-elasticbeanstalk"
+# Official Amazon AWS command-line interface
+brew "awscli"
+# Programmable completion for Bash 3.2
+brew "bash-completion"
+# Statistics utility to count lines of code
+brew "cloc"
+# Dependency Manager for PHP
+brew "composer"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
+# Open source suite of directory software
+brew "openldap"
+# Get a file from an HTTP, HTTPS or FTP server
+brew "curl"
+# Lightweight DNS forwarder and DHCP server
+brew "dnsmasq", restart_service: true
+# Easiest way to build and release mobile apps
+brew "fastlane"
+# WebDriver <-> Marionette proxy
+brew "geckodriver"
+# Distributed revision control system
+brew "git"
+# Official GitLab CI runner
+brew "gitlab-runner"
+# GNU Transport Layer Security (TLS) Library
+brew "gnutls"
+# GNU Pretty Good Privacy (PGP) package
+brew "gnupg"
+# Update of iperf: measures TCP, UDP, and SCTP bandwidth
+brew "iperf3"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
+# Network authentication protocol
+brew "krb5"
+# Postgres C API library
+brew "libpq"
+# Open source relational database management system
+brew "mysql", restart_service: true
+# HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
+brew "nginx"
+# Port scanning utility for large networks
+brew "nmap"
+# General-purpose scripting language
+brew "php", restart_service: true
+# Python dependency management tool
+brew "pipenv", link: false
+# Object-relational database system
+brew "postgresql", restart_service: true
+# Password generator
+brew "pwgen"
+# User interface to the TELNET protocol
+brew "telnet"
+# CLI tool that moves files or folder to the trash
+brew "trash"
+# Command-line client for Travis CI
+brew "travis"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
+# UNIX shell (command interpreter)
+brew "zsh"
+# Additional completion definitions for zsh
+brew "zsh-completions"
+# Fish shell like syntax highlighting for zsh
+brew "zsh-syntax-highlighting"
+# Password manager that keeps all passwords secure behind one password
+cask "1password"
+# View, print, and comment on PDF documents
+cask "adobe-acrobat-reader"
+# Apple TV Aerial screensaver
+cask "aerial"
+# Memory training application
+cask "anki"
+# Voice and text chat software
+cask "discord"
+# App to build and share containerized applications and microservices
+cask "docker"
+# Collaborative team software
+cask "figma"
+# Git client focusing on productivity
+cask "gitkraken"
+# Set of tools to manage resources and applications hosted on Google Cloud
+cask "google-cloud-sdk"
+cask "graphql-playground"
+# Open-source keystroke visualizer
+cask "keycastr"
+# WiFi site survey software and WiFi scanner
+cask "netspot"
+# Reverse proxy, secure introspectable tunnels to localhost
+cask "ngrok"
+# Free and open source web app scanner
+cask "owasp-zap"
+# Browser designed for modern work
+cask "pushplaylabs-sidekick"
+# Visible indicator of the current input source
+cask "showyedge"
+# Graphical client for Git version control
+cask "sourcetree"
+# System monitor for the menu bar
+cask "stats"
+# Video game digital distribution service
+cask "steam"
+# Break time reminder app
+cask "stretchly"
+# Native GUI tool for relational databases
+cask "tableplus"
+# Messaging app with a focus on speed and security
+cask "telegram"
+# Development environment
+cask "vagrant"
+# Free and open-source hosted hypervisor for x86 virtualization
+cask "virtualbox"
+# Mind mapping and brainstorming tool
+cask "xmind"
+# Multi-platform graphical interface for official Nmap Security Scanner
+cask "zenmap"

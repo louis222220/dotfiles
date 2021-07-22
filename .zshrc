@@ -24,6 +24,9 @@ ZSH_THEME="random"
 # If set to an empty array, this variable will have no effect.
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
+# Set list of themes to ignore when loading at random
+ZSH_THEME_RANDOM_IGNORED=()
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 

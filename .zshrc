@@ -115,3 +115,4 @@ export LANG=en_US.UTF-8
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+test -e /Users/louis/.iterm2_shell_integration.zsh && source /Users/louis/.iterm2_shell_integration.zsh || true

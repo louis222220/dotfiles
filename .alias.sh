@@ -4,7 +4,9 @@ alias lsh='ls -ld .?*'
 alias aws-test-credential='aws sts get-caller-identity'
 #
 
+alias composer-install-production='composer install --optimize-autoloader --no-dev --no-interaction'
 alias yarn-install-production='yarn install --production --frozen-lockfile'
+alias npm-install-production='npm ci --production'
 function tree-node () {
 	if [ -d "./node_modules" ]
 	then

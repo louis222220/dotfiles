@@ -34,8 +34,6 @@ brew "fastlane"
 brew "geckodriver"
 # Distributed revision control system
 brew "git"
-# Official GitLab CI runner
-brew "gitlab-runner"
 # GNU Transport Layer Security (TLS) Library
 brew "gnutls"
 # GNU Pretty Good Privacy (PGP) package
@@ -51,7 +49,7 @@ brew "libpq"
 # Open source relational database management system
 brew "mysql", restart_service: true
 # HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
-brew "nginx"
+brew "nginx", restart_service: true
 # Port scanning utility for large networks
 brew "nmap"
 # General-purpose scripting language
@@ -62,6 +60,8 @@ brew "pipenv", link: false
 brew "postgresql", restart_service: true
 # Password generator
 brew "pwgen"
+# Persistent key-value database, with built-in net interface
+brew "redis", restart_service: true
 # User interface to the TELNET protocol
 brew "telnet"
 # CLI tool that moves files or folder to the trash
@@ -82,6 +82,8 @@ cask "1password"
 cask "adobe-acrobat-reader"
 # Apple TV Aerial screensaver
 cask "aerial"
+# Application launcher and productivity software
+cask "alfred"
 # Memory training application
 cask "anki"
 # Tool to show live information about the batteries in various devices

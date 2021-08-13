@@ -86,6 +86,8 @@ cask "aerial"
 cask "alfred"
 # Memory training application
 cask "anki"
+# Replacement of the default battery indicator in the menu bar
+cask "battery-buddy"
 # Tool to show live information about the batteries in various devices
 cask "coconutbattery"
 # Voice and text chat software

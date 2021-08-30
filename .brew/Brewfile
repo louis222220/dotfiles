@@ -8,6 +8,12 @@ tap "zegervdv/zathura"
 brew "act"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.9"
+# Core application library for C
+brew "glib"
+# OpenType text shaping engine
+brew "harfbuzz"
+# Framework for layout and rendering of i18n text
+brew "pango"
 # Download with resuming and segmented downloading
 brew "aria2"
 # Client for Amazon Elastic Beanstalk web service
@@ -30,6 +36,8 @@ brew "curl"
 brew "dnsmasq", restart_service: true
 # Easiest way to build and release mobile apps
 brew "fastlane"
+# Libraries to talk to Microsoft SQL Server and Sybase databases
+brew "freetds"
 # WebDriver <-> Marionette proxy
 brew "geckodriver"
 # Distributed revision control system
@@ -46,14 +54,16 @@ brew "jq"
 brew "krb5"
 # Postgres C API library
 brew "libpq"
+# Fast and user friendly build system
+brew "meson"
 # Open source relational database management system
 brew "mysql", restart_service: true
 # HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
-brew "nginx", restart_service: true
+brew "nginx"
 # Port scanning utility for large networks
 brew "nmap"
 # General-purpose scripting language
-brew "php", restart_service: true
+brew "php"
 # Python dependency management tool
 brew "pipenv", link: false
 # Object-relational database system
@@ -61,7 +71,7 @@ brew "postgresql", restart_service: true
 # Password generator
 brew "pwgen"
 # Persistent key-value database, with built-in net interface
-brew "redis", restart_service: true
+brew "redis"
 # User interface to the TELNET protocol
 brew "telnet"
 # CLI tool that moves files or folder to the trash
@@ -86,8 +96,6 @@ cask "aerial"
 cask "alfred"
 # Memory training application
 cask "anki"
-# Replacement of the default battery indicator in the menu bar
-cask "battery-buddy"
 # Tool to show live information about the batteries in various devices
 cask "coconutbattery"
 # Voice and text chat software

@@ -9,7 +9,7 @@ function curl-header-only () {
 		echo "URL as an argument is required"
 		return 1
 	fi
-	curl -sSLD - https://calendar.google.com/ -o /dev/null
+	curl -sSLD - $1 -o /dev/null
 }
 
 alias composer-install-production='composer install --optimize-autoloader --no-dev --no-interaction'

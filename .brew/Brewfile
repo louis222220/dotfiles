@@ -24,6 +24,8 @@ brew "awscli"
 brew "bash-completion"
 # Statistics utility to count lines of code
 brew "cloc"
+# Color-highlighted diff(1) output
+brew "colordiff"
 # Dependency Manager for PHP
 brew "composer"
 # GNU File, Shell, and Text utilities
@@ -112,6 +114,8 @@ cask "keycastr"
 cask "netspot"
 # Reverse proxy, secure introspectable tunnels to localhost
 cask "ngrok"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
 # Browser designed for modern work
 cask "pushplaylabs-sidekick"
 # Visible indicator of the current input source

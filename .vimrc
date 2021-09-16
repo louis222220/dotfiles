@@ -2,6 +2,7 @@
 :set number relativenumber
 " Display the number of line and character
 :set ruler
+
 " Link y with clipboard
 :set clipboard=unnamed
 
@@ -10,3 +11,6 @@ filetype plugin indent on
 :set tabstop=4
 " when indenting with '>', use 4 spaces width
 :set shiftwidth=4
+
+" Language syntax highlight
+:syntax on

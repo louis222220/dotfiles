@@ -82,6 +82,8 @@ brew "trash"
 brew "travis"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Tracks most-used directories to make cd smarter
+brew "z"
 # UNIX shell (command interpreter)
 brew "zsh"
 # Additional completion definitions for zsh

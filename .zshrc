@@ -1,8 +1,12 @@
 source $HOME/.alias.sh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 ### Completion
 bash ~/.fastlane/completions/completion.sh
 ### 
+
+### rupa/z - jump around
+. /usr/local/etc/profile.d/z.sh
 
 ### ZSH
 
@@ -83,9 +87,10 @@ ZSH_THEME_RANDOM_IGNORED=()
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
 	git
-	zsh-autosuggestions
 	docker
 	docker-compose
+	zsh-autosuggestions
+	zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh

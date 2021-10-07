@@ -2,6 +2,13 @@ alias lsh='ls -ld .?*'
 
 # AWS
 alias aws-test-credential='aws sts get-caller-identity'
+function upload-s3-shared () {
+	if [[ $# -eq 0 ]] ; then
+		echo "a local file as an argument is required"
+		return 1
+	fi
+	aws s3 cp $1 s3://louis-shared-warehouse/ --acl public-read --profile=louis
+}
 #
 
 function curl-header-only () {

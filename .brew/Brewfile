@@ -10,12 +10,20 @@ brew "act"
 brew "python@3.9"
 # Core application library for C
 brew "glib"
+# Manage compile and link flags for libraries
+brew "pkg-config"
+# Generate introspection data for GObject libraries
+brew "gobject-introspection"
 # OpenType text shaping engine
 brew "harfbuzz"
 # Framework for layout and rendering of i18n text
 brew "pango"
+# Icons for the GNOME project
+brew "adwaita-icon-theme"
 # Download with resuming and segmented downloading
 brew "aria2"
+# Automatic configure script builder
+brew "autoconf"
 # Client for Amazon Elastic Beanstalk web service
 brew "aws-elasticbeanstalk"
 # Official Amazon AWS command-line interface
@@ -30,12 +38,10 @@ brew "colordiff"
 brew "composer"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
-# Open source suite of directory software
-brew "openldap"
-# Get a file from an HTTP, HTTPS or FTP server
-brew "curl"
 # Lightweight DNS forwarder and DHCP server
 brew "dnsmasq", restart_service: true
+# Powerful, clean, object-oriented scripting language
+brew "ruby"
 # Easiest way to build and release mobile apps
 brew "fastlane"
 # Libraries to talk to Microsoft SQL Server and Sybase databases
@@ -44,36 +50,60 @@ brew "freetds"
 brew "geckodriver"
 # Distributed revision control system
 brew "git"
+# GNU Ubiquitous Intelligent Language for Extensions
+brew "guile"
+# Library to load and enumerate PKCS#11 modules
+brew "p11-kit"
+# Validating, recursive, caching DNS resolver
+brew "unbound"
 # GNU Transport Layer Security (TLS) Library
 brew "gnutls"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
+# GSettings schemas for desktop components
+brew "gsettings-desktop-schemas"
+# Toolkit for creating graphical user interfaces
+brew "gtk+3"
+# Improved top (interactive process viewer)
+brew "htop"
 # Update of iperf: measures TCP, UDP, and SCTP bandwidth
 brew "iperf3"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Network authentication protocol
 brew "krb5"
-# Postgres C API library
-brew "libpq"
+# Library that provides automatic proxy configuration management
+brew "libproxy"
+# Small build system for use with gyp or CMake
+brew "ninja"
 # Fast and user friendly build system
 brew "meson"
 # Open source relational database management system
 brew "mysql", restart_service: true
+# HTTP/2 C Library
+brew "nghttp2"
 # HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
 brew "nginx"
 # Port scanning utility for large networks
 brew "nmap"
 # General-purpose scripting language
-brew "php"
+brew "php", link: false
+# General-purpose scripting language
+brew "php@7.4"
 # Python dependency management tool
 brew "pipenv", link: false
+# Cross-platform application and UI framework
+brew "qt"
+# PDF rendering library (based on the xpdf-3.0 code base)
+brew "poppler"
 # Object-relational database system
 brew "postgresql", restart_service: true
 # Password generator
 brew "pwgen"
 # Persistent key-value database, with built-in net interface
 brew "redis"
+# Tool to create intelligent and beautiful documentation
+brew "sphinx-doc"
 # User interface to the TELNET protocol
 brew "telnet"
 # CLI tool that moves files or folder to the trash
@@ -112,6 +142,8 @@ cask "figma"
 cask "google-cloud-sdk"
 # Open-source keystroke visualizer
 cask "keycastr"
+# Privacy-first, open-source platform for knowledge sharing and management
+cask "logseq"
 # WiFi site survey software and WiFi scanner
 cask "netspot"
 # Reverse proxy, secure introspectable tunnels to localhost

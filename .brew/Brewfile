@@ -18,12 +18,16 @@ brew "gobject-introspection"
 brew "harfbuzz"
 # Framework for layout and rendering of i18n text
 brew "pango"
+# Library to render SVG files using Cairo
+brew "librsvg"
 # Icons for the GNOME project
 brew "adwaita-icon-theme"
 # Download with resuming and segmented downloading
 brew "aria2"
 # Automatic configure script builder
 brew "autoconf"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.10"
 # Client for Amazon Elastic Beanstalk web service
 brew "aws-elasticbeanstalk"
 # Official Amazon AWS command-line interface
@@ -55,11 +59,13 @@ brew "guile"
 # Library to load and enumerate PKCS#11 modules
 brew "p11-kit"
 # Validating, recursive, caching DNS resolver
-brew "unbound", restart_service: true
+brew "unbound"
 # GNU Transport Layer Security (TLS) Library
 brew "gnutls"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
 # GSettings schemas for desktop components
 brew "gsettings-desktop-schemas"
 # Toolkit for creating graphical user interfaces
@@ -83,13 +89,13 @@ brew "mysql", restart_service: true
 # HTTP/2 C Library
 brew "nghttp2"
 # HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
-brew "nginx", restart_service: true
+brew "nginx"
 # Port scanning utility for large networks
 brew "nmap"
 # General-purpose scripting language
-brew "php", restart_service: true, link: false
+brew "php", link: false
 # General-purpose scripting language
-brew "php@7.4", restart_service: true
+brew "php@7.4", link: true
 # Python dependency management tool
 brew "pipenv", link: false
 # Cross-platform application and UI framework
@@ -101,7 +107,7 @@ brew "postgresql", restart_service: true
 # Password generator
 brew "pwgen"
 # Persistent key-value database, with built-in net interface
-brew "redis", restart_service: true
+brew "redis"
 # Tool to create intelligent and beautiful documentation
 brew "sphinx-doc"
 # User interface to the TELNET protocol
@@ -144,6 +150,8 @@ cask "google-cloud-sdk"
 cask "keycastr"
 # Privacy-first, open-source platform for knowledge sharing and management
 cask "logseq"
+# Lyrics for iTunes, Spotify, Vox and Audirvana Plus
+cask "lyricsx"
 # WiFi site survey software and WiFi scanner
 cask "netspot"
 # Reverse proxy, secure introspectable tunnels to localhost
@@ -170,5 +178,7 @@ cask "telegram"
 cask "vagrant"
 # Virtualizer for x86 hardware
 cask "virtualbox"
+# View output from scripts in the menu bar
+cask "xbar"
 # Mind mapping and brainstorming tool
 cask "xmind"

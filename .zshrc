@@ -1,6 +1,8 @@
 source $HOME/.alias.sh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+export PATH=$HOME/.composer/vendor/bin:$PATH
+
 ### Completion
 bash ~/.fastlane/completions/completion.sh
 ### 

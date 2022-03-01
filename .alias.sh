@@ -11,6 +11,16 @@ function upload-s3-shared () {
 }
 #
 
+function change-brew-php () {
+	current_version=$(php -r "echo PHP_MAJOR_VERSION.'.'.PHP_MINOR_VERSION;")
+	if [[ $# < 1 ]] ; then
+		echo "Desired PHP version as an argument is required"
+		return 1
+	fi
+	echo "changing php version from $current_version to $1 by homebrew...\n"
+	brew unlink php@$current_version && brew link php@$1
+}
+
 function curl-header-only () {
 	if [[ $# -eq 0 ]] ; then
 		echo "URL as an argument is required"

@@ -93,9 +93,11 @@ brew "nginx"
 # Port scanning utility for large networks
 brew "nmap"
 # General-purpose scripting language
-brew "php", link: false
+brew "php"
 # General-purpose scripting language
-brew "php@7.4", link: true
+brew "php@7.4"
+# General-purpose scripting language
+brew "php@8.0"
 # Python dependency management tool
 brew "pipenv", link: false
 # Cross-platform application and UI framework
@@ -150,12 +152,14 @@ cask "google-cloud-sdk"
 cask "keycastr"
 # Privacy-first, open-source platform for knowledge sharing and management
 cask "logseq"
-# Lyrics for iTunes, Spotify, Vox and Audirvana Plus
-cask "lyricsx"
+# Controls and monitors all fans on Apple computers
+cask "macs-fan-control"
 # WiFi site survey software and WiFi scanner
 cask "netspot"
 # Reverse proxy, secure introspectable tunnels to localhost
 cask "ngrok"
+# Simulate the notch on the MacBook Pro
+cask "notch-simulator"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
 # Browser designed for modern work
@@ -178,6 +182,8 @@ cask "telegram"
 cask "vagrant"
 # Virtualizer for x86 hardware
 cask "virtualbox"
+# Multimedia player
+cask "vlc"
 # View output from scripts in the menu bar
 cask "xbar"
 # Mind mapping and brainstorming tool

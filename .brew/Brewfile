@@ -3,6 +3,7 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
+tap "mongodb/brew"
 tap "zegervdv/zathura"
 # Run your GitHub Actions locally 🚀
 brew "act"
@@ -12,6 +13,8 @@ brew "python@3.9"
 brew "glib"
 # Manage compile and link flags for libraries
 brew "pkg-config"
+# Toolkit for image loading and pixel buffer manipulation
+brew "gdk-pixbuf"
 # Generate introspection data for GObject libraries
 brew "gobject-introspection"
 # OpenType text shaping engine
@@ -24,6 +27,8 @@ brew "librsvg"
 brew "adwaita-icon-theme"
 # Download with resuming and segmented downloading
 brew "aria2"
+# GNOME accessibility toolkit
+brew "atk"
 # Automatic configure script builder
 brew "autoconf"
 # Interpreted, interactive, object-oriented programming language
@@ -32,6 +37,8 @@ brew "python@3.10"
 brew "aws-elasticbeanstalk"
 # Official Amazon AWS command-line interface
 brew "awscli"
+# Microsoft Azure CLI 2.0
+brew "azure-cli"
 # Programmable completion for Bash 3.2
 brew "bash-completion"
 # Statistics utility to count lines of code
@@ -42,6 +49,8 @@ brew "colordiff"
 brew "composer"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
+# Get a file from an HTTP, HTTPS or FTP server
+brew "curl"
 # Lightweight DNS forwarder and DHCP server
 brew "dnsmasq", restart_service: true
 # Powerful, clean, object-oriented scripting language
@@ -78,10 +87,10 @@ brew "iperf3"
 brew "jq"
 # Statically typed programming language for the JVM
 brew "kotlin"
-# Network authentication protocol
-brew "krb5"
 # Library that provides automatic proxy configuration management
 brew "libproxy"
+# Web and API based SMTP testing tool
+brew "mailhog"
 # Small build system for use with gyp or CMake
 brew "ninja"
 # Fast and user friendly build system
@@ -112,6 +121,8 @@ brew "postgresql", restart_service: true
 brew "pwgen"
 # Persistent key-value database, with built-in net interface
 brew "redis"
+# Powerful, clean, object-oriented scripting language
+brew "ruby@3.0"
 # Tool to create intelligent and beautiful documentation
 brew "sphinx-doc"
 # User interface to the TELNET protocol
@@ -130,6 +141,10 @@ brew "zsh"
 brew "zsh-completions"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
+# An interactive JavaScript command-line interface to MongoDB
+brew "mongodb/brew/mongodb-community-shell"
+# High-performance, schema-free, document-oriented database
+brew "mongodb/brew/mongodb-community@4.4"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # View, print, and comment on PDF documents
@@ -140,6 +155,8 @@ cask "aerial"
 cask "alfred"
 # Memory training application
 cask "anki"
+# Productivity platform for tasks, docs, goals, and chat
+cask "clickup"
 # Tool to show live information about the batteries in various devices
 cask "coconutbattery"
 # Voice and text chat software
@@ -150,8 +167,12 @@ cask "docker"
 cask "drawio"
 # Collaborative team software
 cask "figma"
+# Virtual video-calling space
+cask "gather"
 # Set of tools to manage resources and applications hosted on Google Cloud
 cask "google-cloud-sdk"
+# Keyboard customizer
+cask "karabiner-elements"
 # Open-source keystroke visualizer
 cask "keycastr"
 # Privacy-first, open-source platform for knowledge sharing and management
@@ -166,6 +187,8 @@ cask "ngrok"
 cask "notch-simulator"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
+# HTTP client that helps testing and describing APIs
+cask "paw"
 # Browser designed for modern work
 cask "pushplaylabs-sidekick"
 # Control your tools with a few keystrokes
@@ -180,6 +203,8 @@ cask "stats"
 cask "steam"
 # Break time reminder app
 cask "stretchly"
+# IDE, client, and GUI for MongoDB
+cask "studio-3t"
 # Native GUI tool for relational databases
 cask "tableplus"
 # Messaging app with a focus on speed and security
@@ -194,3 +219,5 @@ cask "vlc"
 cask "xbar"
 # Mind mapping and brainstorming tool
 cask "xmind"
+# Share, organize and collaborate on designs
+cask "zeplin"

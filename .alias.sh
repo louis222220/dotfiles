@@ -1,4 +1,5 @@
 alias lsh='ls -ld .?*'
+alias start-mongodb='brew services start mongodb/brew/mongodb-community@4.4'
 
 # AWS
 alias aws-test-credential='aws sts get-caller-identity'
@@ -78,3 +79,19 @@ function nvm-upgrade () {
 	) && \. "$NVM_DIR/nvm.sh"
 }
 
+function search-file-content () {
+	echo "Searching the content of all files"
+	echo -e "\tpath: $1"
+	echo -e "\tpattern: $2"
+	echo -e "\tignore: $3"
+	if [[ $# < 2 ]] ; then
+		echo "Path & searching pattern are required"
+		return 1
+	fi
+	parameterToIgnore=""
+	if [[ $# -eq 3 ]] ; then
+		parameterToIgnore="--exclude-dir=$3"
+	fi
+	echo ""
+	grep $1 --regexp=$2  --recursive  --line-number --word-regexp $parameterToIgnore
+}

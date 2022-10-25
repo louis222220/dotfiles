@@ -2,13 +2,13 @@ source $HOME/.alias.sh
 
 export PATH=$HOME/.composer/vendor/bin:$PATH
 
-### rupa/z - jump around
-. /opt/homebrew/etc/profile.d/z.sh
-
 ### Volta
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 
+### jenv
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
 
 ##### Oh My ZSH #####
 
@@ -84,7 +84,10 @@ export ZSH="$HOME/.oh-my-zsh"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(
+	git
+	zsh-z
+)
 
 source $ZSH/oh-my-zsh.sh
 

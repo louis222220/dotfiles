@@ -1,5 +1,5 @@
 alias lsh='ls -ld .?*'
-alias start-mongodb='brew services start mongodb/brew/mongodb-community@4.4'
+alias dc='docker compose'
 
 # AWS
 alias aws-test-credential='aws sts get-caller-identity'

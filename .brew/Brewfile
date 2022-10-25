@@ -7,16 +7,28 @@ brew "awscli"
 brew "php"
 # Dependency Manager for PHP
 brew "composer"
+# Render markdown on the CLI
+brew "glow"
+# Update of iperf: measures TCP, UDP, and SCTP bandwidth
+brew "iperf3"
+# Manage your Java environment
+brew "jenv"
+# Development kit for the Java programming language
+brew "openjdk"
+# Statically typed programming language for the JVM
+brew "kotlin"
 # General-purpose scripting language
 brew "php@7.4"
+# Command-line interface for https://speedtest.net bandwidth tests
+brew "speedtest-cli"
+# User interface to the TELNET protocol
+brew "telnet"
 # CLI tool that moves files or folder to the trash
 brew "trash"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # JavaScript toolchain manager for reproducible environments
 brew "volta"
-# Tracks most-used directories to make cd smarter
-brew "z"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # View, print, and comment on PDF documents
@@ -33,6 +45,10 @@ cask "hiddenbar"
 cask "keycastr"
 # Privacy-first, open-source platform for knowledge sharing and management
 cask "logseq"
+# Controls and monitors all fans on Apple computers
+cask "macs-fan-control"
+# Native desktop app for Messenger (formerly Facebook Messenger)
+cask "messenger"
 # Reverse proxy, secure introspectable tunnels to localhost
 cask "ngrok"
 # App to write, plan, collaborate, and get organized
@@ -63,9 +79,9 @@ cask "studio-3t"
 cask "tableplus"
 # Development environment
 cask "vagrant"
+# Open-source code editor
+cask "visual-studio-code"
 # Multimedia player
 cask "vlc"
 # Rust-based terminal
 cask "warp"
-# Mind mapping and brainstorming tool
-cask "xmind"

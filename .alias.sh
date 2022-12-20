@@ -1,3 +1,4 @@
+alias javak='/opt/homebrew/opt/openjdk/bin/java'
 alias lsh='ls -ld .?*'
 alias dc='docker compose'
 

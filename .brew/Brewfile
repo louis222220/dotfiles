@@ -1,3 +1,4 @@
+tap "daipeihust/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
@@ -29,6 +30,8 @@ brew "trash"
 brew "tree"
 # JavaScript toolchain manager for reproducible environments
 brew "volta"
+# Switch your input method through terminal
+brew "daipeihust/tap/im-select"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # View, print, and comment on PDF documents
@@ -39,8 +42,14 @@ cask "discord"
 cask "docker"
 # Collaborative team software
 cask "figma"
+# Virtual video-calling space
+cask "gather"
+# Set of tools to manage resources and applications hosted on Google Cloud
+cask "google-cloud-sdk"
 # Utility to hide menu bar items
 cask "hiddenbar"
+# Terminal emulator as alternative to Apple's Terminal app
+cask "iterm2"
 # Open-source keystroke visualizer
 cask "keycastr"
 # Privacy-first, open-source platform for knowledge sharing and management
@@ -53,6 +62,8 @@ cask "messenger"
 cask "ngrok"
 # App to write, plan, collaborate, and get organized
 cask "notion"
+# Open-source software for live streaming and screen recording
+cask "obs"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
 # HTTP client that helps testing and describing APIs
@@ -75,6 +86,8 @@ cask "steam"
 cask "stretchly"
 # IDE, client, and GUI for MongoDB
 cask "studio-3t"
+# Git client
+cask "sublime-merge"
 # Native GUI tool for relational databases
 cask "tableplus"
 # Development environment

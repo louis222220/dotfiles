@@ -13,7 +13,14 @@ function upload-s3-shared () {
 }
 #
 
+
 function change-brew-php () {
+	# Prerequisite:
+	# 1. Install php by homebrew
+	# 	brew install php@<version>
+	# 2. Link one php version
+	# 	brew link php@<version>
+
 	current_version=$(php -r "echo PHP_MAJOR_VERSION.'.'.PHP_MINOR_VERSION;")
 	if [[ $# < 1 ]] ; then
 		echo "Desired PHP version as an argument is required"

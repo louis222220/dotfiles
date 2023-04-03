@@ -2,18 +2,21 @@ tap "daipeihust/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
+tap "minio/stable"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Core application library for C
 brew "glib"
 # General-purpose scripting language
-brew "php", link: false
+brew "php"
 # Dependency Manager for PHP
 brew "composer"
-# Render markdown on the CLI
-brew "glow"
 # OpenType text shaping engine
 brew "harfbuzz"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg"
+# Render markdown on the CLI
+brew "glow"
 # Update of iperf: measures TCP, UDP, and SCTP bandwidth
 brew "iperf3"
 # Manage your Java environment
@@ -44,12 +47,16 @@ brew "tree"
 brew "volta"
 # Switch your input method through terminal
 brew "daipeihust/tap/im-select"
+# MinIO Client for object storage and filesystems
+brew "minio/stable/mc"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # View, print, and comment on PDF documents
 cask "adobe-acrobat-reader"
 # Allows connection to a computer remotely
 cask "anydesk"
+# Remotely access another computer through the Google Chrome browser
+cask "chrome-remote-desktop-host"
 # Voice and text chat software
 cask "discord"
 # App to build and share containerized applications and microservices

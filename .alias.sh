@@ -1,3 +1,4 @@
+alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
 alias javak='/opt/homebrew/opt/openjdk/bin/java'
 alias lsh='ls -ld .?*'
 alias dc='docker compose'
@@ -63,8 +64,8 @@ function gb-pull-prune () {
 	merged_branch=$(git branch --show-current)
 	default_branch=$(git symbolic-ref refs/remotes/origin/HEAD | cut -d '/' -f4)
 	git checkout $default_branch &&
-	git pull &&
-	git remote prune origin
+	git fetch --prune &&
+	git merge &&
 	git branch -d $merged_branch
 }
 
@@ -103,3 +104,15 @@ function search-file-content () {
 	echo ""
 	grep $1 --regexp=$2  --recursive  --line-number --word-regexp $parameterToIgnore
 }
+
+function diskUsageAndSort() {
+	echo -e "\tpath: $1"
+
+	if [[ $# < 1 ]] ; then
+		echo "Path are required"
+		return 1
+	fi
+	echo "Calculating disk usage...\n"
+	du -sch $1/* | sort -h
+}
+

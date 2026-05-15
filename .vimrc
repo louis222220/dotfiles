@@ -8,9 +8,13 @@
 
 filetype plugin indent on
 " show existing tab with 4 spaces width
-:set tabstop=4
+:set tabstop=2
 " when indenting with '>', use 4 spaces width
-:set shiftwidth=4
+:set shiftwidth=2
 
 " Language syntax highlight
 :syntax on
+
+" 離開 Insert mode 時切換回英文
+autocmd InsertLeave * call system('im-select com.apple.keylayout.ABC')
+
